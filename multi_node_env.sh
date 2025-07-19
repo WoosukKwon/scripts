@@ -6,9 +6,9 @@ set -x
 export DG_JIT_NVCC_COMPILER=/usr/local/cuda/bin/nvcc
 export CUDA_HOME='/usr/local/cuda'
 
-# export VLLM_ALL2ALL_BACKEND=pplx
+export VLLM_ALL2ALL_BACKEND=pplx
 # export VLLM_ALL2ALL_BACKEND=deepep_high_throughput
-# export VLLM_USE_DEEP_GEMM=1
+export VLLM_USE_DEEP_GEMM=1
 
 MODEL=deepseek-ai/DeepSeek-V3
 TP_SIZE=1
